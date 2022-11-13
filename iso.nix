@@ -5,4 +5,9 @@
     <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix>
     <nixpkgs/nixos/modules/installer/cd-dvd/channel.nix>
   ];
+
+  # Disable wpa_supplicant
+  networking.wireless.enable = false;
+  # Enable NetworkManager
+  networking.networkmanager.enable = true;
 }
