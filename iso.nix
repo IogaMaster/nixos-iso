@@ -10,4 +10,7 @@
   networking.wireless.enable = false;
   # Enable NetworkManager
   networking.networkmanager.enable = true;
+
+  # Optional faster build times with lower compression
+  # isoImage.squashfsCompression = "lz4";
 }
