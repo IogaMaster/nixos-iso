@@ -4,6 +4,8 @@ Some changes have been made from the standard ISO.
 Replace `wpa_supplicant` with `NetworkManager` to make WIFI connection easier.
 
 ## Building:
+Install [Just](https://github.com/casey/just)
 ```sh
-nix-build '<nixpkgs/nixos>' -A config.system.build.isoImage -I nixos-config=iso.nix
+just build
 ```
+Iso is in `result/iso/`
